@@ -1,0 +1,3 @@
+{
+  "plugins": ["glsl", "babel-plugin-macros","glslify"]
+}

@@ -52,19 +52,23 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex px-16 py-4 bg-white justify-between">
-      <div>LOGO</div>
-      {/* <div className="flex space-x-16">
+    <nav className="flex px-10 py-6 bg-transparent justify-between">
+      {/* PORTFOLIO LOGO */}
+      <h1>LOGO</h1>
+
+      {/* Desktop Navbar */}
+      <div className="hidden sm:flex space-x-8 md:space-x-16">
         {navLinks?.map((link, i) => (
-          <div key={i} className="relative overflow-hidden">
+          <div key={i} className="relative overflow-hidden text-lg">
             <AnimatedNavLink title={link.title} />
           </div>
         ))}
-      </div> */}
-      <div onClick={toggleMenu} className="cursor-pointer">
-        Menu
       </div>
 
+      {/* Mobile Navbar */}
+      <div onClick={toggleMenu} className="flex sm:hidden cursor-pointer">
+        Menu
+      </div>
       <AnimatePresence>
         {open && (
           <motion.div
@@ -72,15 +76,13 @@ const Navbar = () => {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="fixed left-0 top-0 w-full h-screen origin-top bg-yellow-400 text-black p-10">
+            className="fixed left-0 top-0 w-full h-screen origin-top bg-black text-white px-10 py-6">
             <div className="flex h-full flex-col">
               <div className="flex justify-between">
-                <h1 className="text-lg text-black">Portfolio</h1>
-                <p
-                  className="cursor-pointer text-md text-black"
-                  onClick={toggleMenu}>
-                  Close
-                </p>
+                <h1>LOGO</h1>
+                <div className="cursor-pointer" onClick={toggleMenu}>
+                  Go Back
+                </div>
               </div>
               <motion.div
                 variants={containerVars}

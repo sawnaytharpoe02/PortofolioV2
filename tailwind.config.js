@@ -4,10 +4,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        lora: ["Lora", "serif"],
-        playFair: ["Playfair Display", "serif"],
-        lemurmure: ["Le Murmure", "sans-serif"],
-        roboto: ["Roboto", "sans-serif"],
+        anderson: ["Anderson Grotesk", "sans-serif"],
+        mango: ["Mango Grotesque", "sans-serif"],
+      },
+      colors: {
+        white: "#fff8ff",
+        dark: "#2a292b",
       },
     },
   },

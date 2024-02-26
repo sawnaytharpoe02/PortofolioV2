@@ -1,8 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900');
-@import url('https://fonts.cdnfonts.com/css/le-murmure');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+
+  /* Anderson Grotest Font Family */
+  @font-face {
+    font-family: 'Anderson Grotesk';
+    src: url('./fonts/Anderson-Grotesk/AndersonGrotesk.otf') format('opentype');
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Anderson Grotesk';
+    src: url('./fonts/Anderson-Grotesk/AndersonGrotesk-Light.otf') format('opentype');
+    font-weight: 300;
+  }
+
+
+  @font-face {
+    font-family: 'Anderson Grotesk';
+    src: url('./fonts/Anderson-Grotesk/AndersonGrotesk-Bold.otf') format('opentype');
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: 'Anderson Grotesk';
+    src: url('./fonts/Anderson-Grotesk/AndersonGrotesk-Ultrabold.otf') format('opentype');
+    font-weight: 800;
+  }
+
+  @font-face {
+    font-family: 'Anderson Grotesk';
+    src: url('./fonts/Anderson-Grotesk/AndersonGrotesk-Black.otf') format('opentype');
+    font-weight: 900;
+  }
+
+  /* Mango Grotesque Font Family */
+  @font-face {
+    font-family: 'Mango Grotesque';
+    src: url('./fonts/Mango-Grotesque/MangoGrotesque-Thin.otf') format('opentype');
+    font-weight: 100;
+  }
+
+  @font-face {
+    font-family: 'Mango Grotesque';
+    src: url('./fonts/Mango-Grotesque/MangoGrotesque-Light.otf') format('opentype');
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: 'Mango Grotesque';
+    src: url('./fonts/Mango-Grotesque/MangoGrotesque-Regular.otf') format('opentype');
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Mango Grotesque';
+    src: url('./fonts/Mango-Grotesque/MangoGrotesque-Medium.otf') format('opentype');
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: 'Mango Grotesque';
+    src: url('./fonts/Mango-Grotesque/MangoGrotesque-SemiBold.otf') format('opentype');
+    font-weight: 600;
+  }
+
+  @font-face {
+    font-family: 'Mango Grotesque';
+    src: url('./fonts/Mango-Grotesque/MangoGrotesque-Bold.otf') format('opentype');
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: 'Mango Grotesque';
+    src: url('./fonts/Mango-Grotesque/MangoGrotesque-ExtraBold.otf') format('opentype');
+    font-weight: 800;
+  }
+
+  @font-face {
+    font-family: 'Mango Grotesque';
+    src: url('./fonts/Mango-Grotesque/MangoGrotesque-Black.otf') format('opentype');
+    font-weight: 900;
+  }
+}
