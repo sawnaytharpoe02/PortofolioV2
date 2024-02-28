@@ -11,6 +11,9 @@ export default {
         white: "#fff8ff",
         dark: "#2a292b",
       },
+      fontSize: {
+        dynamic: "clamp(4rem, 30vw, 14rem)",
+      },
     },
   },
   plugins: [],

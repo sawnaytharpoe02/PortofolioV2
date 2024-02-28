@@ -52,14 +52,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex px-10 py-6 bg-transparent justify-between">
+    <nav className="flex px-12 py-6 bg-transparent justify-between">
       {/* PORTFOLIO LOGO */}
       <h1>LOGO</h1>
 
       {/* Desktop Navbar */}
       <div className="hidden sm:flex space-x-8 md:space-x-16">
         {navLinks?.map((link, i) => (
-          <div key={i} className="relative overflow-hidden text-lg">
+          <div key={i} className="relative overflow-hidden">
             <AnimatedNavLink title={link.title} />
           </div>
         ))}
