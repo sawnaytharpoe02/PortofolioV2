@@ -22,10 +22,10 @@ const Hero = () => {
       initial="initial"
       animate="animate"
       transition={{ staggerChildren: 0.1 }}
-      className="w-full flex flex-col leading-none px-16 mt-3 text-dynamic tracking-wide font-mango">
-      <HeroRowTop title={"Crafting"} />
-      <HeroRowCenter title={"Tomorrow's"} />
-      <HeroRowBottom title={"Digital Techscape"} />
+      className="max-w-screen-lg px-5 mx-auto flex flex-col leading-none mt-3 text-dynamic tracking-wide font-mango py-10">
+      <HeroRowTop title={"FullStack."} />
+      <HeroRowCenter title={"Passionate."} />
+      <HeroRowBottom title={"Learning."} />
     </motion.div>
   );
 };
@@ -36,23 +36,13 @@ const AnimateHeroLetters = ({ title }) => (
   </motion.span>
 );
 
-const introPara = `I’m a junior fullstack developer with a passion for innovation and
-        creativity. I craft elegant and engaging websites that deliver
-        exceptional user experiences.`;
-
 const HeroRowTop = ({ title }) => {
   return (
     <div className="flex items-center justify-end space-x-8">
-      <div className="w-[18rem] mt-10 leading-5 font-anderson text-base tracking-normal">
-        {introPara.split("").map((char, index) => (
-          <motion.span
-            initial={{ y: 40, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: index * 0.1 }}
-            key={index}>
-            {char}
-          </motion.span>
-        ))}
+      <div className="w-[17rem] text-sm font-medium font-dmsan tracking-normal">
+        I’m a Junior Fullstack Developer with a passion for innovation and
+        creativity. I craft elegant and engaging websites that deliver
+        exceptional user experiences.
       </div>
       <AnimateHeroLetters title={title} />
     </div>

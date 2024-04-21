@@ -6,13 +6,15 @@ export default {
       fontFamily: {
         anderson: ["Anderson Grotesk", "sans-serif"],
         mango: ["Mango Grotesque", "sans-serif"],
+        dmsan: ["DM Sans", "sans-serif"],
       },
       colors: {
-        white: "#fff8ff",
-        dark: "#2a292b",
+        white: "#f9f7f7",
+        dark: "#110a08",
+        grey: "#4e4b4b",
       },
       fontSize: {
-        dynamic: "clamp(4rem, 30vw, 14rem)",
+        dynamic: "clamp(4rem, 30vw, 12rem)",
       },
     },
   },

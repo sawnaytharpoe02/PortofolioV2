@@ -1,12 +1,18 @@
-import Navbar from "./components/NavSection/Navbar";
-import Hero from "./components/HeroSection/Hero";
+import Navbar from "./components/nav/Navbar";
+import Hero from "./section/hero/Hero";
+import AboutMe from "./section/aboutme/AboutMe";
+import MyExpertise from "./section/expertise/MyExpertise";
+import Project from "./section/project";
 import "./App.css";
 
 function App() {
   return (
-    <main className="font-anderson w-full min-h-screen bg-white text-black">
+    <main className="w-full min-h-[1000vh] font-dmsan text-black border border-black">
       <Navbar />
       <Hero />
+      <AboutMe />
+      <MyExpertise />
+      <Project />
     </main>
   );
 }

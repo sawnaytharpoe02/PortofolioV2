@@ -52,7 +52,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex px-12 py-6 bg-transparent justify-between">
+    <nav className="w-full flex px-12 py-6 bg-transparent justify-between">
       {/* PORTFOLIO LOGO */}
       <h1>LOGO</h1>
 
@@ -76,7 +76,7 @@ const Navbar = () => {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="fixed left-0 top-0 w-full h-screen origin-top bg-black text-white px-10 py-6">
+            className="fixed left-0 top-0 w-full h-screen origin-top bg-black text-white px-10 py-6 z-10">
             <div className="flex h-full flex-col">
               <div className="flex justify-between">
                 <h1>LOGO</h1>
