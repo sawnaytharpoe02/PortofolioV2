@@ -7,7 +7,7 @@ const Project = () => {
     {
       title: "C2 Montreal",
       development: "Fullstack",
-      src: "one.jng",
+      src: "one.jpg",
       color: "#000000",
     },
 
@@ -35,8 +35,8 @@ const Project = () => {
 
   const [modal, setModal] = useState({ active: false, index: 0 });
   return (
-    <main>
-      <div className="max-w-screen-lg px-5 mx-auto ">
+    <main className="flex h-screen justify-center items-center">
+      <div className="w-screen flex flex-col items-center justify-center">
         {projects.map((project, index) => {
           return (
             <ProjectCard
@@ -48,8 +48,8 @@ const Project = () => {
             />
           );
         })}
-        <ProjectModal modal={modal} projects={projects} />
       </div>
+      <ProjectModal modal={modal} projects={projects} />
     </main>
   );
 };

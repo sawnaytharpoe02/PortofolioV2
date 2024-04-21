@@ -9,7 +9,7 @@ const ProjectCard = ({ index, setModal, title, development }) => {
       onMouseLeave={() => {
         setModal({ active: false, index });
       }}
-      className="flex justify-between items-center py-6 cursor-pointer border-t broder-t-neutral-500 group">
+      className="w-full flex justify-between items-center py-6 px-28 cursor-pointer border-t broder-t-neutral-500 group">
       <h2 className="text-4xl group-hover:translate-x-[-10px] group-hover:opacity-50 transition-all duration-300 ease-in-out">
         {title}
       </h2>
