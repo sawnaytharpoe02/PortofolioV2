@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import ProjectCard from "../../components/ProjectCard";
-import ProjectModal from "../../components/projectModal";
+import ProjectCard from "../../components/projectCard";
+import ProjectModal from "../../components/projectModal"
 
 const Project = () => {
   const projects = [
