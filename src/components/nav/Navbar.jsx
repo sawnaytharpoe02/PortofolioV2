@@ -54,7 +54,7 @@ const Navbar = () => {
   return (
     <nav className="w-full flex px-12 py-6 bg-transparent justify-between">
       {/* PORTFOLIO LOGO */}
-      <h1>LOGO</h1>
+      <h1 className="uppercase font-bold flex items-center">naythar.</h1>
 
       {/* Desktop Navbar */}
       <div className="hidden sm:flex space-x-8 md:space-x-16">

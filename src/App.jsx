@@ -4,6 +4,7 @@ import AboutMe from "./section/aboutme/AboutMe";
 import MyExpertise from "./section/expertise/MyExpertise";
 import Project from "./section/project";
 import Contact from "./section/contact";
+import Footer from "./components/footer";
 import "./App.css";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <MyExpertise />
       <Project />
       <Contact />
+      <Footer />
     </main>
   );
 }
