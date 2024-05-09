@@ -5,6 +5,7 @@ import MyExpertise from "./section/expertise/MyExpertise";
 import Project from "./section/project";
 import Contact from "./section/contact";
 import Footer from "./components/footer";
+import FeatureProjects from "./section/feature_projects/featureProjects";
 import "./App.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <AboutMe />
       <MyExpertise />
+      <FeatureProjects />
       <Project />
       <Contact />
       <Footer />

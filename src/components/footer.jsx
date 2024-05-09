@@ -6,7 +6,7 @@ const Footer = () => {
       <div>
         <p>
           My portfolio is a living document, just like the web. © 2024
-          SawNayTharPoe.
+          sawnaytharpoe.
         </p>
       </div>
       <div className="flex gap-2 items-center">

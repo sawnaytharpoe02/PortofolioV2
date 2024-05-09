@@ -54,4 +54,39 @@ const projects = [
   },
 ];
 
-export { languages, frameworks, projects };
+const featuredProjects = [
+  {
+    title: "Taskito",
+    src: "/one.jpg",
+    repo: "https://github.com/sawnaytharpoe02/TaskMng_ReactNode",
+    description:
+      "Taskito is a fullstack app streamlines project & task management for teams. Users (created by admins) can create and manage projects, assign tasks with real-time alerts, and leverage search, filtering, and export features for tasks and reports.",
+    tech: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Ant Design",
+      "Cloudinary",
+      "Socket.io",
+    ],
+  },
+  {
+    title: "Forklore",
+    src: "/two.png",
+    repo: "https://github.com/sawnaytharpoe02/rest-pos",
+    description:
+      "Forklore is a food ordering app for restaurants. Customers scan a QR for user-friendly menus (we handle setup!) and making informed choices. Admin can control menus, categories, addons and more. It's delicious efficiency!",
+    tech: [
+      "Next.js",
+      "Typescript",
+      "Redux Toolkit",
+      "Material UI",
+      "Prisma",
+      "PostgreSQL",
+      "S3 Storage",
+    ],
+  },
+];
+
+export { languages, frameworks, projects, featuredProjects };
