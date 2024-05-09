@@ -1,31 +1,6 @@
 import React from "react";
 import { GoTriangleRight } from "react-icons/go";
-
-const Languages = [
-  "HTML",
-  "CSS",
-  "VANILLA JAVASCRIPT",
-  "SASS/SCSS",
-  "TYPESCRIPT",
-];
-
-const Frameworks = [
-  "React.js",
-  "Next.js",
-  "Redux/Redux Toolkit",
-  "Node.js",
-  "Express.js",
-  "PostgreSQL",
-  "Prisma",
-  "MongoDB",
-  "Nest.js",
-  "Bootstrap",
-  "Tailwind CSS",
-  "Material UI",
-  "Ant Design",
-  "Git",
-  "Postman",
-];
+import { languages, frameworks } from "../../constant";
 
 const MyExpertise = () => {
   return (
@@ -42,7 +17,7 @@ const MyExpertise = () => {
           <div>
             <p className="uppercase text-black mb-4 font-lg">languages</p>
             <div>
-              {Languages.map((language, index) => (
+              {languages.map((language, index) => (
                 <div key={index} className="flex items-center mt-2 space-x-2">
                   <GoTriangleRight />
                   <p>{language}</p>
@@ -55,7 +30,7 @@ const MyExpertise = () => {
               frameworks/ libraries/ OTHERS
             </p>
             <div className="grid grid-cols-2">
-              {Frameworks.slice(0, 8).map((item, index) => (
+              {frameworks.slice(0, 8).map((item, index) => (
                 <div
                   key={index}
                   className="flex items-center mt-2 space-x-2 mr-12">
@@ -63,7 +38,7 @@ const MyExpertise = () => {
                   <p>{item}</p>
                 </div>
               ))}
-              {Frameworks.slice(8, 15).map((item, index) => (
+              {frameworks.slice(8, 15).map((item, index) => (
                 <div key={index} className="flex items-center mt-2 space-x-2">
                   <GoTriangleRight />
                   <p>{item}</p>

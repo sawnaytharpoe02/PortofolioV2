@@ -3,6 +3,7 @@ import Hero from "./section/hero/Hero";
 import AboutMe from "./section/aboutme/AboutMe";
 import MyExpertise from "./section/expertise/MyExpertise";
 import Project from "./section/project";
+import Contact from "./section/contact";
 import "./App.css";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <AboutMe />
       <MyExpertise />
       <Project />
+      <Contact />
     </main>
   );
 }
