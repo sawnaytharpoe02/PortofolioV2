@@ -3,7 +3,7 @@ import React from "react";
 const myVariant = {
   inputBox: "flex flex-col",
   fullWidthInputBox: "flex flex-col col-span-2",
-  inputStyle: "border-b outline-none focus:outline-none mt-2 text-neutral-400",
+  inputStyle: "border-b outline-none focus:outline-none mt-2 text-neutral-600 bg-transparent",
 };
 
 const Contact = () => {

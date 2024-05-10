@@ -7,7 +7,32 @@
 body,
 html {
   height: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  background-color: "#f9f7f7";
+  width: 100%;
+  background-color: "#F5F0EC";
+}
+
+/* Customize the scrollbar track */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Customize the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #808080;
+  border-radius: 5px;
+}
+
+/* Customize the scrollbar track when hovering over it */
+::-webkit-scrollbar-track:hover {
+  background-color: #f0f0f0;
+}
+
+/* Customize the scrollbar thumb when hovering over it */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #606060;
+}
+
+/* Customize the scrollbar corner */
+::-webkit-scrollbar-corner {
+  background-color: #ffffff;
 }

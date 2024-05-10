@@ -9,8 +9,8 @@ export default {
         dmsan: ["DM Sans", "sans-serif"],
       },
       colors: {
-        white: "#f9f7f7",
-        dark: "#110a08",
+        white: "#F5F0EC",
+        dark: "#222222",
         grey: "#4e4b4b",
       },
       fontSize: {

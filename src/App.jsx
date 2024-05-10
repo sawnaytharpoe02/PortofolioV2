@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Navbar from "./components/nav/Navbar";
 import Hero from "./section/hero/Hero";
 import AboutMe from "./section/aboutme/AboutMe";
@@ -9,8 +10,16 @@ import FeatureProjects from "./section/feature_projects/featureProjects";
 import "./App.css";
 
 function App() {
+  useEffect(() => {
+    (async () => {
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
+
+      const locomotiveScroll = new LocomotiveScroll();
+    })();
+  }, []);
+
   return (
-    <main className="w-full min-h-[1000vh] font-dmsan text-black border border-black">
+    <main className="w-full min-h-[1000vh] mx-auto bg-white font-dmsan text-black">
       <Navbar />
       <Hero />
       <AboutMe />
