@@ -19,7 +19,7 @@ function App() {
   }, []);
 
   return (
-    <main className="w-full min-h-[1000vh] mx-auto bg-white font-dmsan text-black">
+    <main className="w-full min-h-[1000vh] mx-auto font-dmsan">
       <Navbar />
       <Hero />
       <AboutMe />

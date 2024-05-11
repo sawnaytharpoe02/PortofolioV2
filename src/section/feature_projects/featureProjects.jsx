@@ -31,7 +31,7 @@ const FeatureProjects = () => {
               {featuredProjects[0].tech.map((tech, index) => (
                 <div
                   key={index}
-                  className="bg-neutral-100 rounded-[.55rem] text-[14px] tracking-wide py-0.5 px-2.5 inline-block">
+                  className="bg-neutral-200 rounded-[.55rem] text-[14px] tracking-wide py-0.5 px-2.5 inline-block">
                   {tech}
                 </div>
               ))}
@@ -83,7 +83,7 @@ const FeatureProjects = () => {
               {featuredProjects[1].tech.map((tech, index) => (
                 <div
                   key={index}
-                  className="bg-neutral-100 rounded-[.55rem] text-[14px] tracking-wide py-0.5 px-2.5 inline-block">
+                  className="bg-neutral-200 rounded-[.55rem] text-[14px] tracking-wide py-0.5 px-2.5 inline-block">
                   {tech}
                 </div>
               ))}

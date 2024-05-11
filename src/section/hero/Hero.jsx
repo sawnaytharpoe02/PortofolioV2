@@ -40,7 +40,7 @@ const HeroRowTop = ({ title }) => {
   return (
     <div className="flex items-center justify-end space-x-8">
       <div className="w-[17rem] text-sm font-medium font-dmsan tracking-normal">
-        I’m a Junior Fullstack Developer with a passion for innovation and
+        I’m a junior web developer with a passion for innovation and
         creativity. I craft elegant and engaging websites that deliver
         exceptional user experiences.
       </div>
