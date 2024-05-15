@@ -70,10 +70,10 @@ const ProjectModal = ({ modal, projects }) => {
         variants={scaleAnimation}
         initial="initial"
         animate={active ? "enter" : "closed"}
-        className="w-[400px] h-[350px] absolute bg-white overflow-hidden pointer-events-none flex justify-center items-center">
+        className="w-[400px] h-[400px] absolute bg-white overflow-hidden pointer-events-none flex justify-center items-center">
         <div
           style={{ top: index * -100 + "%" }}
-          className="w-full h-full absolute transition-all duration-150 ease-[cubic-bezier(0.76, 0, 0.24, 1)]">
+          className="w-full h-full absolute transition-all duration-500 ease-[cubic-bezier(0.76, 0, 0.24, 1)]">
           {projects.map((project, index) => {
             const { src, color } = project;
 

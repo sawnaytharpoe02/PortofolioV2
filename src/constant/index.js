@@ -26,28 +26,64 @@ const frameworks = [
 
 const projects = [
   {
-    title: "C2 Montreal",
+    id: 1,
+    title: "Bookmark Landing",
     development: "Fullstack",
     src: "one.jpg",
     color: "#000000",
   },
 
   {
-    title: "Office Studio",
+    id: 2,
+    title: "Invoice Maker",
     development: "Backend",
     src: "two.png",
     color: "#8C8C8C",
   },
 
   {
-    title: "Locomotive",
+    id: 3,
+    title: "Boostrap Admin Dashboard",
     development: "Frontend",
     src: "three.png",
     color: "#EFE8D3",
   },
 
   {
-    title: "Silencio",
+    id: 4, 
+    title: "Clash Of Clans",
+    development: "Design & Frontend",
+    src: "two.png",
+    color: "#706D63",
+  },
+
+  {
+    id: 5,
+    title: "Foodie",
+    development: "Fullstack",
+    src: "one.jpg",
+    color: "#000000",
+  },
+
+  {
+    id: 6,
+    title: "Loop Studios",
+    development: "Backend",
+    src: "two.png",
+    color: "#8C8C8C",
+  },
+
+  {
+    id: 7,
+    title: "SnapLanding",
+    development: "Frontend",
+    src: "three.png",
+    color: "#EFE8D3",
+  },
+
+  {
+    id: 8,
+    title: "Music App UI",
     development: "Design & Frontend",
     src: "two.png",
     color: "#706D63",

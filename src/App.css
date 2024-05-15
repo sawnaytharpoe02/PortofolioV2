@@ -37,3 +37,8 @@ html {
 ::-webkit-scrollbar-corner {
   background-color: #ffffff;
 }
+
+::selection {
+  color: white;
+  background: burlywood;
+}
