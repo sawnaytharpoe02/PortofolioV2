@@ -1,6 +1,6 @@
 import React from "react";
 import { GoTriangleRight } from "react-icons/go";
-import { languages, frameworks } from "../../constant";
+import { languages, frameworks } from "../../utils/constant";
 
 const MyExpertise = () => {
   return (

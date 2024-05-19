@@ -42,7 +42,7 @@ const Contact = () => {
           <textarea className={myVariant.inputStyle} id="message" type="text" />
         </div>
       </div>
-      <button className="px-10 py-1.5 bg-black text-white rounded-full mt-12 uppercase">Send</button>
+      <button className="px-10 py-1.5 bg-black text-white rounded-full mt-12 uppercase hover:bg-neutral-800 transition duration-150 ease-in">Send</button>
     </div>
   );
 };

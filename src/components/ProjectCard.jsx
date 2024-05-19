@@ -1,22 +1,45 @@
 import React from "react";
 
-const ProjectCard = ({ index, setModal, title, development }) => {
+const ProjectCard = ({ project }) => {
   return (
-    <div
-      onMouseEnter={() => {
-        setModal({ active: true, index });
-      }}
-      onMouseLeave={() => {
-        setModal({ active: false, index });
-      }}
-      className="w-full flex justify-between items-center py-8 px-32 cursor-pointer border-t broder-t-neutral-500 group">
-      <h2 className="text-4xl group-hover:translate-x-[-10px] group-hover:opacity-50 transition-all duration-300 ease-in-out">
-        {title}
-      </h2>
+    <div className="w-full grid grid-cols-4 gap-4 items-center py-8 px-32 border-t border-t-neutral-800 group">
+      <div>
+        <h2 className="text-lg group-hover:text-neutral-600 transition-all duration-300 ease-in-out">
+          {project.title}
+        </h2>
+      </div>
 
-      <p className="group-hover:translate-x-[10px] group-hover:opacity-50 transition-all duration-300 ease-in-out">
-        {development} Development
-      </p>
+      <div className="flex gap-2">
+        {project.stacks.map((stack, index) => (
+          <div
+            key={index}
+            className="bg-neutral-600 text-white rounded-full text-[14px] tracking-wide py-0.5 px-2.5 inline-block">
+            {stack}
+          </div>
+        ))}
+      </div>
+
+      <div>
+        <p className="group-hover:text-neutral-600 transition-all duration-300 ease-in-out">
+          {project.development} Development
+        </p>
+      </div>
+
+      <div>
+        {project.href ? (
+          <a
+            href={project.href}
+            className="group-hover:text-neutral-600 transition-all duration-300 ease-in-out">
+            {project.href.replace(/^https?:\/\//, "")}
+          </a>
+        ) : (
+          <a
+            href={project.github}
+            className="group-hover:text-neutral-600 transition-all duration-300 ease-in-out">
+            Github
+          </a>
+        )}
+      </div>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -16,13 +16,11 @@ const AboutMe = () => {
       scrub: true,
       markers: true,
       onEnter: () => {
-        console.log("enter");
         document.body.style.backgroundColor = "#222";
         document.body.style.color = "#fff";
         document.body.style.transition = "all 0.4s";
       },
       onLeave: () => {
-        console.log("leave");
         document.body.style.backgroundColor = "initial";
         document.body.style.color = "#222";
         document.body.style.transition = "all 0.4s";

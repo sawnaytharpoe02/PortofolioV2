@@ -1,5 +1,5 @@
 import React from "react";
-import { featuredProjects } from "../../constant";
+import { featuredProjects } from "../../utils/constant";
 
 const FeatureProjects = () => {
   return (

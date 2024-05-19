@@ -29,64 +29,96 @@ const projects = [
     id: 1,
     title: "Bookmark Landing",
     development: "Fullstack",
-    src: "one.jpg",
-    color: "#000000",
+    href: "https://beegarden.netlify.app",
+    stacks: ["html", "css", "js"],
   },
 
   {
     id: 2,
     title: "Invoice Maker",
     development: "Backend",
-    src: "two.png",
-    color: "#8C8C8C",
+    href: "https://beegarden.netlify.app",
+    stacks: ["html", "css", "js"],
   },
 
   {
     id: 3,
     title: "Boostrap Admin Dashboard",
     development: "Frontend",
-    src: "three.png",
-    color: "#EFE8D3",
+    href: "https://beegarden.netlify.app",
+    stacks: ["html", "css", "js"],
   },
 
   {
-    id: 4, 
+    id: 4,
     title: "Clash Of Clans",
     development: "Design & Frontend",
-    src: "two.png",
-    color: "#706D63",
+    href: "https://beegarden.netlify.app",
+    stacks: ["html", "css", "js"],
   },
 
   {
     id: 5,
     title: "Foodie",
     development: "Fullstack",
-    src: "one.jpg",
-    color: "#000000",
+    href: "https://beegarden.netlify.app",
+    stacks: ["html", "css", "js"],
   },
 
   {
     id: 6,
     title: "Loop Studios",
     development: "Backend",
-    src: "two.png",
-    color: "#8C8C8C",
+    href: "https://beegarden.netlify.app",
+    stacks: ["html", "css", "js"],
   },
 
   {
     id: 7,
     title: "SnapLanding",
     development: "Frontend",
-    src: "three.png",
-    color: "#EFE8D3",
+    github: "https://github.com/sawnaytharpoe02/BeeGarden",
+    stacks: ["html", "css", "js"],
   },
 
   {
     id: 8,
     title: "Music App UI",
     development: "Design & Frontend",
-    src: "two.png",
-    color: "#706D63",
+    github: "https://github.com/sawnaytharpoe02/BeeGarden",
+    stacks: ["html", "css", "js"],
+  },
+
+  {
+    id: 9,
+    title: "Bookmark Landing",
+    development: "Fullstack",
+    href: "https://beegarden.netlify.app",
+    stacks: ["html", "css", "js"],
+  },
+
+  {
+    id: 10,
+    title: "Invoice Maker",
+    development: "Backend",
+    href: "https://beegarden.netlify.app",
+    stacks: ["html", "css", "js"],
+  },
+
+  {
+    id: 11,
+    title: "Boostrap Admin Dashboard",
+    development: "Frontend",
+    href: "https://beegarden.netlify.app",
+    stacks: ["html", "css", "js"],
+  },
+
+  {
+    id: 12,
+    title: "Clash Of Clans",
+    development: "Design & Frontend",
+    href: "https://beegarden.netlify.app",
+    stacks: ["html", "css", "js"],
   },
 ];
 
