@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="w-full grid grid-cols-4 gap-4 items-center py-8 px-32 border-t border-t-neutral-800 group">
+    <div className="w-full grid grid-cols-4 gap-4 items-center py-5 border-t border-t-neutral-200 group text-neutral-500">
       <div>
         <h2 className="text-lg group-hover:text-neutral-600 transition-all duration-300 ease-in-out">
           {project.title}
@@ -13,7 +13,7 @@ const ProjectCard = ({ project }) => {
         {project.stacks.map((stack, index) => (
           <div
             key={index}
-            className="bg-neutral-600 text-white rounded-full text-[14px] tracking-wide py-0.5 px-2.5 inline-block">
+            className="border border-neutral-800 text-neutral-900 rounded-full text-[14px] tracking-wide py-0.5 px-2.5 inline-block">
             {stack}
           </div>
         ))}
@@ -21,7 +21,7 @@ const ProjectCard = ({ project }) => {
 
       <div>
         <p className="group-hover:text-neutral-600 transition-all duration-300 ease-in-out">
-          {project.development} Development
+          {project.development}
         </p>
       </div>
 
