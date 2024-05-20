@@ -27,99 +27,84 @@ const frameworks = [
 const projects = [
   {
     id: 1,
-    title: "Bookmark Landing",
-    development: "Fullstack",
-    href: "https://beegarden.netlify.app",
-    stacks: ["html", "css", "js"],
+    title: "Booky Landy",
+    development: "Frontend",
+    href: "https://bookylandy.netlify.app",
+    stacks: ["Html", "Scss", "Boostrap"],
+    year: "2022",
   },
-
   {
     id: 2,
-    title: "Invoice Maker",
-    development: "Backend",
-    href: "https://beegarden.netlify.app",
-    stacks: ["html", "css", "js"],
+    title: "Cycle Studio",
+    development: "Frontend",
+    href: "https://cyclestudio.netlify.app",
+    stacks: ["Html", "Scss", "Gsap"],
+    year: "2022",
   },
-
   {
     id: 3,
-    title: "Boostrap Admin Dashboard",
+    title: "SnapLand",
     development: "Frontend",
-    href: "https://beegarden.netlify.app",
-    stacks: ["html", "css", "js"],
+    href: "https://snapland.netlify.app",
+    stacks: ["Html", "Boostrap"],
+    year: "2022",
   },
-
   {
     id: 4,
-    title: "Clash Of Clans",
-    development: "Design & Frontend",
-    href: "https://beegarden.netlify.app",
-    stacks: ["html", "css", "js"],
+    title: "Foodie Mody",
+    development: "Frontend",
+    href: "https://foodie-mody.netlify.app",
+    stacks: ["Html", "Bootstrap", "Javascript", "Vite"],
+    year: "2022",
   },
-
   {
     id: 5,
-    title: "Foodie",
-    development: "Fullstack",
+    title: "BeeGarden",
+    development: "Frontend",
     href: "https://beegarden.netlify.app",
-    stacks: ["html", "css", "js"],
+    stacks: ["html", "Scss", "Javascript", "Gsap", "Vite"],
+    year: "2022",
   },
-
   {
     id: 6,
-    title: "Loop Studios",
-    development: "Backend",
-    href: "https://beegarden.netlify.app",
-    stacks: ["html", "css", "js"],
+    title: "Fortress Clash",
+    development: "Design",
+    href: "https://fortress-clash.netlify.app",
+    stacks: ["Html", "Css", "Swiper"],
+    year: "2022",
   },
-
   {
     id: 7,
-    title: "SnapLanding",
+    title: "Premium Dashboard",
     development: "Frontend",
-    github: "https://github.com/sawnaytharpoe02/BeeGarden",
-    stacks: ["html", "css", "js"],
+    href: "https://bootboard.vercel.app",
+    stacks: ["Vite", "Bootstrap", "Javascript", "Apexchart", "JsVectorMap"],
+    year: "2022",
   },
-
   {
     id: 8,
-    title: "Music App UI",
-    development: "Design & Frontend",
-    github: "https://github.com/sawnaytharpoe02/BeeGarden",
-    stacks: ["html", "css", "js"],
+    title: "Music Tracker",
+    development: "Design",
+    href: "https://music-track.netlify.app",
+    stacks: ["Html", "Css", "Javascript"],
+    year: "2022",
   },
-
   {
     id: 9,
-    title: "Bookmark Landing",
-    development: "Fullstack",
-    href: "https://beegarden.netlify.app",
-    stacks: ["html", "css", "js"],
-  },
-
-  {
-    id: 10,
-    title: "Invoice Maker",
-    development: "Backend",
-    href: "https://beegarden.netlify.app",
-    stacks: ["html", "css", "js"],
-  },
-
-  {
-    id: 11,
-    title: "Boostrap Admin Dashboard",
+    title: "Todo List",
     development: "Frontend",
-    href: "https://beegarden.netlify.app",
-    stacks: ["html", "css", "js"],
+    href: "https://to-todo.vercel.app",
+    stacks: ["React", "Css"],
+    year: "2023",
   },
-
-  {
-    id: 12,
-    title: "Clash Of Clans",
-    development: "Design & Frontend",
-    href: "https://beegarden.netlify.app",
-    stacks: ["html", "css", "js"],
-  },
+  // {
+  //   id: 9,
+  //   title: "Duralumin Blog",
+  //   development: "Frontend",
+  //   href: "https://duralumin-blog.vercel.app",
+  //   stacks: ["Html", "Css", "Vite"],
+  //   year: "2023",
+  // },
 ];
 
 const featuredProjects = [

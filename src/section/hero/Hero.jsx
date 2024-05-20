@@ -40,9 +40,9 @@ const HeroRowTop = ({ title }) => {
   return (
     <div className="flex items-center justify-end space-x-8">
       <div className="w-[17rem] text-sm font-medium font-dmsan tracking-normal">
-        I’m a junior web developer with a passion for innovation and
-        creativity. I craft elegant and engaging websites that deliver
-        exceptional user experiences.
+        I’m a junior web developer with a passion for innovation and creativity.
+        I craft elegant and engaging websites that deliver exceptional user
+        experiences.
       </div>
       <AnimateHeroLetters title={title} />
     </div>
@@ -53,11 +53,6 @@ const HeroRowCenter = ({ title }) => {
   return (
     <div className="flex items-center justify-start space-x-8 -mt-8">
       <AnimateHeroLetters title={title} />
-      <motion.div
-        initial={{ width: 0 }}
-        animate={{ width: "200px" }}
-        transition={{ delay: 0.6 }}
-        className="h-0.5 bg-black"></motion.div>
     </div>
   );
 };
