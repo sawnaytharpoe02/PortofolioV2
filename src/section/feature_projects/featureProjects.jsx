@@ -7,7 +7,7 @@ const FeatureProjects = () => {
       <h2 className="text-5xl mb-4">Featured Projects</h2>
 
       {/* feat projcet 01 */}
-      <div className="mt-20 w-[65vw]">
+      <div className="mt-20 w-[800px]">
         <div className="w-full h-[400px]">
           <img
             className="w-full h-full object-cover"
@@ -59,7 +59,7 @@ const FeatureProjects = () => {
       </div>
 
       {/* feat project 02 */}
-      <div className="mt-40 w-[60vw] ml-auto">
+      <div className="mt-40 ml-auto w-[800px]">
         <div className="w-full h-[400px]">
           <img
             className="w-full h-full object-cover"

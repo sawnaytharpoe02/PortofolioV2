@@ -41,7 +41,7 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <section ref={aboutSectionRef} className="max-w-screen mx-auto py-24">
+    <section ref={aboutSectionRef} className="max-w-screen-xl mx-auto py-24">
       <div className="space-y-20 px-20 text-5xl leading-relaxed tracking-wide">
         <p>
           Hey there! I'm Saw Nay Thar Poe, originally from Myanmar, While my

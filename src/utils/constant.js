@@ -28,7 +28,7 @@ const projects = [
   {
     id: 1,
     title: "Booky Landy",
-    development: "Frontend",
+    development: ["Frontend"],
     href: "https://bookylandy.netlify.app",
     stacks: ["Html", "Scss", "Boostrap"],
     year: "2022",
@@ -36,7 +36,7 @@ const projects = [
   {
     id: 2,
     title: "Cycle Studio",
-    development: "Frontend",
+    development: ["Frontend"],
     href: "https://cyclestudio.netlify.app",
     stacks: ["Html", "Scss", "Gsap"],
     year: "2022",
@@ -44,7 +44,7 @@ const projects = [
   {
     id: 3,
     title: "SnapLand",
-    development: "Frontend",
+    development: ["Frontend"],
     href: "https://snapland.netlify.app",
     stacks: ["Html", "Boostrap"],
     year: "2022",
@@ -52,7 +52,7 @@ const projects = [
   {
     id: 4,
     title: "Foodie Mody",
-    development: "Frontend",
+    development: ["Frontend"],
     href: "https://foodie-mody.netlify.app",
     stacks: ["Html", "Bootstrap", "Javascript", "Vite"],
     year: "2022",
@@ -60,7 +60,7 @@ const projects = [
   {
     id: 5,
     title: "BeeGarden",
-    development: "Frontend",
+    development: ["Frontend"],
     href: "https://beegarden.netlify.app",
     stacks: ["html", "Scss", "Javascript", "Gsap", "Vite"],
     year: "2022",
@@ -68,7 +68,7 @@ const projects = [
   {
     id: 6,
     title: "Fortress Clash",
-    development: "Design",
+    development: ["Design"],
     href: "https://fortress-clash.netlify.app",
     stacks: ["Html", "Css", "Swiper"],
     year: "2022",
@@ -76,7 +76,7 @@ const projects = [
   {
     id: 7,
     title: "Premium Dashboard",
-    development: "Frontend",
+    development: ["Frontend"],
     href: "https://bootboard.vercel.app",
     stacks: ["Vite", "Bootstrap", "Javascript", "Apexchart", "JsVectorMap"],
     year: "2022",
@@ -84,7 +84,7 @@ const projects = [
   {
     id: 8,
     title: "Music Tracker",
-    development: "Design",
+    development: ["Design"],
     href: "https://music-track.netlify.app",
     stacks: ["Html", "Css", "Javascript"],
     year: "2022",
@@ -92,19 +92,51 @@ const projects = [
   {
     id: 9,
     title: "Todo List",
-    development: "Frontend",
+    development: ["Frontend"],
     href: "https://to-todo.vercel.app",
     stacks: ["React", "Css"],
     year: "2023",
   },
-  // {
-  //   id: 9,
-  //   title: "Duralumin Blog",
-  //   development: "Frontend",
-  //   href: "https://duralumin-blog.vercel.app",
-  //   stacks: ["Html", "Css", "Vite"],
-  //   year: "2023",
-  // },
+  {
+    id: 10,
+    title: "Duralumin Blog",
+    development: ["Frontend"],
+    href: "https://duralumin-blog.vercel.app",
+    stacks: ["Html", "Css", "Vite"],
+    year: "2023",
+  },
+  {
+    id: 11,
+    title: "Meme Generator",
+    development: ["Frontend"],
+    href: "https://create-meme.vercel.app",
+    stacks: ["React", "Css", "Vite"],
+    year: "2023",
+  },
+  {
+    id: 12,
+    title: "Social Media App",
+    development: ["Fullstack", "Collaborative Task"],
+    github: "https://github.com/sawnaytharpoe02/gp-socialmedia-app",
+    stacks: ["React", "Css", "Nodejs", "MongoDB"],
+    year: "2023",
+  },
+  {
+    id: 13,
+    title: "Media API",
+    development: ["Backend"],
+    github: "https://github.com/sawnaytharpoe02/media-api",
+    stacks: ["ExpressJs", "MongoDB"],
+    year: "2023",
+  },
+  {
+    id: 14,
+    title: "Task Management System",
+    development: ["Fullstack", "Collaborative Task"],
+    github: "https://github.com/sawnaytharpoe02/TaskMng_NextNest",
+    stacks: ["NestJS", "React", "MongoDB", "Material UI"],
+    year: "2023",
+  },
 ];
 
 const featuredProjects = [

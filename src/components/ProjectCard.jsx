@@ -11,11 +11,15 @@ const ProjectCard = ({ project }) => {
         </div>
 
         <div className="basis-3/12">
-          <h2 className="text-lg">{project.title}</h2>
+          <h2 className="text-lg font-medium">{project.title}</h2>
         </div>
 
         <div className="basis-2/12">
-          <p>{project.development}</p>
+          <div className="flex flex-wrap">
+            {project.development.map((el, index) => (
+              <p key={index}>{index !== project.development.length - 1 ? el + " ," : el}</p>
+            ))}
+          </div>
         </div>
 
         <div className="basis-3/12">

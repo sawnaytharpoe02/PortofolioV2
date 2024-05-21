@@ -1,66 +1,21 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const letterAnimate = {
-  initial: {
-    y: "65%",
-    opacity: 0,
-  },
-  animate: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.7,
-      ease: "easeInOut",
-    },
-  },
-};
-
 const Hero = () => {
   return (
-    <motion.div
-      initial="initial"
-      animate="animate"
-      transition={{ staggerChildren: 0.1 }}
-      className="max-w-screen-lg px-5 mx-auto flex flex-col leading-none mt-3 text-dynamic tracking-wide font-mango py-10">
-      <HeroRowTop title={"FullStack."} />
-      <HeroRowCenter title={"Passionate."} />
-      <HeroRowBottom title={"Learning."} />
-    </motion.div>
-  );
-};
-
-const AnimateHeroLetters = ({ title }) => (
-  <motion.span variants={letterAnimate} className="inline-block uppercase">
-    {title}
-  </motion.span>
-);
-
-const HeroRowTop = ({ title }) => {
-  return (
-    <div className="flex items-center justify-end space-x-8">
-      <div className="w-[17rem] text-sm font-medium font-dmsan tracking-normal">
-        I’m a junior web developer with a passion for innovation and creativity.
-        I craft elegant and engaging websites that deliver exceptional user
-        experiences.
+    <div className="max-w-screen-xl mx-auto h-[34rem] px-20 border border-red-400 flex items-end font-mango py-10 pb-0 mt-18">
+      <div className="flex items-end">
+        <p className="relative text-dynamic leading-none tracking-tight font-thin font-anderson">
+          <span>Web</span>
+          <br />
+          <span>Developer</span>
+          <span className="absolute w-[8rem] h-[8rem] bg-[#ebdcc9] -z-10 rounded-full bottom-[18px] right-[-30px]"></span>
+        </p>
+        <p className="w-[20rem] text-sm font-medium font-dmsan tracking-normal mb-8">
+          Junior Web Developer passionate about crafting elegant, engaging
+          websites with exceptional user experiences.
+        </p>
       </div>
-      <AnimateHeroLetters title={title} />
-    </div>
-  );
-};
-
-const HeroRowCenter = ({ title }) => {
-  return (
-    <div className="flex items-center justify-start space-x-8 -mt-8">
-      <AnimateHeroLetters title={title} />
-    </div>
-  );
-};
-
-const HeroRowBottom = ({ title }) => {
-  return (
-    <div className="flex justify-end -mt-8">
-      <AnimateHeroLetters title={title} />
     </div>
   );
 };
