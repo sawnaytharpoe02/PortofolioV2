@@ -9,17 +9,17 @@ html {
   height: 100%;
   width: 100%;
   background-color: "#F5F0EC";
-  color: '#222'
+  color: '#222';
 }
 
 /* Customize the scrollbar track */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 /* Customize the scrollbar thumb (the draggable part) */
 ::-webkit-scrollbar-thumb {
-  background-color: #808080;
+  background-color: #C7B7A3;
   border-radius: 5px;
 }
 
