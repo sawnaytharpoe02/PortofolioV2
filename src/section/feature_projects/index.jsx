@@ -4,7 +4,7 @@ import Double from "../../components/Double";
 
 const FeatureProjects = () => {
   return (
-    <main className="w-full mx-auto py-24 border border-red-600">
+    <main className="w-full mx-auto py-24">
       <h2 className="text-5xl mb-4 px-10">Featured Projects</h2>
       <div className="h-fit">
         <Double featuredProjects={[featuredProjects[0], featuredProjects[1]]} />

@@ -155,7 +155,8 @@ const featuredProjects = [
       "Cloudinary",
       "Socket.io",
     ],
-    color: "#D1CBC2",
+    bgColor: "#000000",
+    titleColor: "#F5F0EC",
   },
   {
     title: "Forklore",
@@ -172,7 +173,8 @@ const featuredProjects = [
       "PostgreSQL",
       "S3 Storage",
     ],
-    color: "#E1FE66",
+    bgColor: "#F5F0EC",
+    titleColor: "#222222",
   },
 ];
 
