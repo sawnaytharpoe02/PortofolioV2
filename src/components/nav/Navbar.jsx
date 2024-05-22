@@ -52,62 +52,64 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full flex px-12 py-6 bg-transparent justify-between">
-      {/* PORTFOLIO LOGO */}
-      <div className="flex gap-1 items-center">
-        <h1 className="uppercase font-bold flex items-center">naythar</h1>
-        <img src="/favicon.png" alt="logo" width={8} height={8} />
-      </div>
+    <div className="h-[10vh] grid items-center">
+      <nav className="w-full flex px-12 bg-transparent justify-between">
+        {/* PORTFOLIO LOGO */}
+        <div className="flex gap-1 items-center">
+          <h1 className="uppercase font-bold flex items-center">naythar</h1>
+          <img src="/favicon.png" alt="logo" width={8} height={8} />
+        </div>
 
-      {/* Desktop Navbar */}
-      <div className="hidden sm:flex space-x-8 md:space-x-16">
-        {navLinks?.map((link, i) => (
-          <div key={i} className="relative overflow-hidden">
-            <AnimatedNavLink title={link.title} />
-          </div>
-        ))}
-      </div>
-
-      {/* Mobile Navbar */}
-      <div onClick={toggleMenu} className="flex sm:hidden cursor-pointer">
-        Menu
-      </div>
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            variants={menuVars}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            className="fixed left-0 top-0 w-full h-screen origin-top bg-black text-white px-10 py-6 z-10">
-            <div className="flex h-full flex-col">
-              <div className="flex justify-between">
-                <h1>LOGO</h1>
-                <div className="cursor-pointer" onClick={toggleMenu}>
-                  Go Back
-                </div>
-              </div>
-              <motion.div
-                variants={containerVars}
-                initial="initial"
-                animate="open"
-                exit="initial"
-                className="flex flex-col h-full justify-center items-center space-y-6">
-                {navLinks.map((link, i) => (
-                  <div key={i} className="overflow-hidden">
-                    <MobileNavLink
-                      key={i}
-                      title={link.title}
-                      href={link.href}
-                    />
-                  </div>
-                ))}
-              </motion.div>
+        {/* Desktop Navbar */}
+        <div className="hidden sm:flex space-x-8 md:space-x-16">
+          {navLinks?.map((link, i) => (
+            <div key={i} className="relative overflow-hidden">
+              <AnimatedNavLink title={link.title} />
             </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </nav>
+          ))}
+        </div>
+
+        {/* Mobile Navbar */}
+        <div onClick={toggleMenu} className="flex sm:hidden cursor-pointer">
+          Menu
+        </div>
+        <AnimatePresence>
+          {open && (
+            <motion.div
+              variants={menuVars}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              className="fixed left-0 top-0 w-full h-screen origin-top bg-black text-white px-10 py-6 z-10">
+              <div className="flex h-full flex-col">
+                <div className="flex justify-between">
+                  <h1>LOGO</h1>
+                  <div className="cursor-pointer" onClick={toggleMenu}>
+                    Go Back
+                  </div>
+                </div>
+                <motion.div
+                  variants={containerVars}
+                  initial="initial"
+                  animate="open"
+                  exit="initial"
+                  className="flex flex-col h-full justify-center items-center space-y-6">
+                  {navLinks.map((link, i) => (
+                    <div key={i} className="overflow-hidden">
+                      <MobileNavLink
+                        key={i}
+                        title={link.title}
+                        href={link.href}
+                      />
+                    </div>
+                  ))}
+                </motion.div>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </nav>
+    </div>
   );
 };
 

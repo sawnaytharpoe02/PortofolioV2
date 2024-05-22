@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from "react";
 import Navbar from "./components/nav/Navbar";
-import Hero from "./section/hero/Hero";
-import AboutMe from "./section/aboutme/AboutMe";
-import MyExpertise from "./section/expertise/MyExpertise";
+import Hero from "./section/hero";
+import AboutMe from "./section/aboutme";
+import MyExpertise from "./section/expertise";
 import Project from "./section/project";
 import Contact from "./section/contact";
-import Footer from "./components/footer";
-import FeatureProjects from "./section/feature_projects/featureProjects";
+import FeatureProjects from "./section/feature_projects";
+import Footer from "./components/Footer";
 import gsap from "gsap";
 import "./App.css";
 
@@ -62,7 +62,7 @@ function App() {
 
   return (
     <React.Fragment>
-      <main className="w-full min-h-[1000vh] mx-auto font-dmsan">
+      <main className="w-full mx-auto font-dmsan">
         <Navbar />
         <Hero />
         <AboutMe />
@@ -74,7 +74,7 @@ function App() {
       </main>
       <div
         ref={circle}
-        className="bg-[#C7B7A3] h-[18px] w-[18px] rounded-full fixed top-0 left-0 pointer-events-none"></div>
+        className="bg-cursor h-[18px] w-[18px] rounded-full fixed top-0 left-0 pointer-events-none"></div>
     </React.Fragment>
   );
 }

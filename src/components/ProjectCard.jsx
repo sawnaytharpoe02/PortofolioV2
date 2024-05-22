@@ -5,7 +5,7 @@ import { GithubIcon } from "../utils/general-icons";
 const ProjectCard = ({ project }) => {
   return (
     <>
-      <div className="w-full flex py-5 border-t border-t-neutral-200 text-neutral-900">
+      <div className="w-full flex py-5 border-t border-t-neutral-200 text-grey">
         <div className="basis-1/12">
           <p>{project.year}</p>
         </div>
@@ -27,7 +27,7 @@ const ProjectCard = ({ project }) => {
             {project.stacks.map((stack, index) => (
               <div
                 key={index}
-                className="bg-neutral-200 text-neutral-800 rounded-full text-[14px] tracking-wide py-0.5 px-2.5 inline-block">
+                className="bg-skiny text-neutral-800 rounded-full text-[14px] tracking-wide py-0.5 px-2.5 inline-block">
                 {stack}
               </div>
             ))}

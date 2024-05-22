@@ -142,10 +142,10 @@ const projects = [
 const featuredProjects = [
   {
     title: "Taskito",
-    src: "/one.jpg",
+    href: "https://taskito.vercel.app/login",
     repo: "https://github.com/sawnaytharpoe02/TaskMng_ReactNode",
     description:
-      "Taskito is a fullstack app streamlines project & task management for teams. Users (created by admins) can create and manage projects, assign tasks with real-time alerts, and leverage search, filtering, and export features for tasks and reports.",
+      "Taskito is a fullstack app that streamlines project and task management for teams. Admins create users, who can manage projects, assign tasks with real-time alerts, and use search, filtering, and export features for tasks and reports.",
     tech: [
       "React.js",
       "Node.js",
@@ -155,13 +155,14 @@ const featuredProjects = [
       "Cloudinary",
       "Socket.io",
     ],
+    color: "#D1CBC2",
   },
   {
     title: "Forklore",
-    src: "/two.png",
+    href: "********",
     repo: "https://github.com/sawnaytharpoe02/rest-pos",
     description:
-      "Forklore is a food ordering app for restaurants. Customers scan a QR for user-friendly menus (we handle setup!) and making informed choices. Admin can control menus, categories, addons and more. It's delicious efficiency!",
+      "Forklore is a food ordering app for restaurants. Customers scan a QR code for user-friendly menus, and admins manage menus, categories, addons, and more. Delicious efficiency!",
     tech: [
       "Next.js",
       "Typescript",
@@ -171,6 +172,7 @@ const featuredProjects = [
       "PostgreSQL",
       "S3 Storage",
     ],
+    color: "#E1FE66",
   },
 ];
 
