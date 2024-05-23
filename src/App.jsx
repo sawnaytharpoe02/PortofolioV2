@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useLayoutEffect, useEffect, useState } from "react";
 import Navbar from "./components/nav/Navbar";
 import Hero from "./section/hero";
 import AboutMe from "./section/aboutme";
@@ -8,33 +8,52 @@ import Contact from "./section/contact";
 import FeatureProjects from "./section/feature_projects";
 import Footer from "./components/Footer";
 import Cursor from "./components/Cursor";
-import { CursorHoverProvider, HoverContext } from "./utils/CursorHoverProvider";
+import { CursorHoverProvider } from "./utils/CursorHoverProvider";
+import SplashScreen from "./components/SplashScreen";
+import gsap from "gsap";
 import "./App.css";
 
 function App() {
+  const [splashscreenFinished, setSplashscreenFinished] = useState(false);
+  const [timeline, setTimeline] = useState(null);
+
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
-
       const locomotiveScroll = new LocomotiveScroll();
     })();
   }, []);
 
+  useLayoutEffect(() => {
+    const context = gsap.context(() => {
+      const tl = gsap.timeline({
+        onComplete: () => setSplashscreenFinished(true),
+      });
+      setTimeline(tl);
+    });
+
+    return () => context.revert();
+  }, []);
+
   return (
     <CursorHoverProvider>
-      <React.Fragment>
-        <main className="w-full mx-auto font-dmsan">
-          <Navbar />
-          <Hero />
-          <AboutMe />
-          <MyExpertise />
-          <FeatureProjects />
-          <Project />
-          <Contact />
-          <Footer />
-        </main>
+      <div className="font-dmsan">
+        {splashscreenFinished ? (
+          <main className="w-full mx-auto">
+            <Navbar />
+            <Hero />
+            <AboutMe />
+            <MyExpertise />
+            <FeatureProjects />
+            <Project />
+            <Contact />
+            <Footer />
+          </main>
+        ) : (
+          <SplashScreen timeline={timeline} />
+        )}
         <Cursor />
-      </React.Fragment>
+      </div>
     </CursorHoverProvider>
   );
 }

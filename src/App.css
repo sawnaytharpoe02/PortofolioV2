@@ -2,14 +2,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
-body,
-html {
-  height: 100%;
+body {
   width: 100%;
+  min-height: 100vh;
   background-color: "#F5F0EC";
   color: '#222';
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+[data-hidden] {
+  opacity: 0;
 }
 
 /* Customize the scrollbar track */
@@ -30,7 +36,7 @@ html {
 
 /* Customize the scrollbar thumb when hovering over it */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #606060;
+  background-color: #C7B7A3;
 }
 
 /* Customize the scrollbar corner */
