@@ -9,38 +9,31 @@ const AboutMe = () => {
   useEffect(() => {
     const el = aboutSectionRef.current;
 
+    const changeBodyStyle = (bgColor, color) => {
+      document.body.style.backgroundColor = bgColor;
+      document.body.style.color = color;
+      document.body.style.transition = "all 0.8s";
+    };
+
     const trigger = {
       trigger: el,
       start: "10% center",
       end: "80% center",
       scrub: true,
-      onEnter: () => {
-        document.body.style.backgroundColor = "#222";
-        document.body.style.color = "#fff";
-        document.body.style.transition = "all 0.4s";
-      },
-      onLeave: () => {
-        document.body.style.backgroundColor = "initial";
-        document.body.style.color = "#222";
-        document.body.style.transition = "all 0.4s";
-      },
-      onEnterBack: () => {
-        document.body.style.backgroundColor = "#222";
-        document.body.style.color = "#fff";
-        document.body.style.transition = "all 0.4s";
-      },
-      onLeaveBack: () => {
-        document.body.style.backgroundColor = "initial";
-        document.body.style.color = "#222";
-        document.body.style.transition = "all 0.4s";
-      },
+      onEnter: () => changeBodyStyle("#222", "#fff"),
+      onLeave: () => changeBodyStyle("initial", "#222"),
+      onEnterBack: () => changeBodyStyle("#222", "#fff"),
+      onLeaveBack: () => changeBodyStyle("initial", "#222"),
     };
 
     ScrollTrigger.create(trigger);
   }, []);
 
   return (
-    <section id="about" ref={aboutSectionRef} className="max-w-screen-2xl mx-auto pt-8 lg:py-24">
+    <section
+      id="about"
+      ref={aboutSectionRef}
+      className="max-w-screen-2xl mx-auto pt-8 lg:py-24">
       <div className="space-y-10 lg:space-y-20 pl-4 lg:px-20 text-lg lg:text-5xl tracking-wider leading-relaxed lg:leading-relaxed lg:tracking-wide">
         <p>
           Hey there! I'm Saw Nay Thar Poe, originally from Myanmar, While my

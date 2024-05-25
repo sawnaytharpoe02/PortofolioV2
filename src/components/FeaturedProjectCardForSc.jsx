@@ -18,7 +18,7 @@ const FeaturedProjectCardForSc = ({ project }) => {
       <div className="space-y-3 mt-4">
         <div>
           <h4 className="text-xl uppercase">Project Concept</h4>
-          <p className="text-grey">{project.description}</p>
+          <p className="text-grey mt-1">{project.description}</p>
         </div>
         <div className="space-y-2">
           <h5 className="text-xl uppercase">Tech Behind Implemented</h5>

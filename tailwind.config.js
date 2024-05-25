@@ -16,7 +16,6 @@ export default {
         skiny: "#ebdcc9",
       },
       fontSize: {
-        // dynamic: "clamp(4rem, 30vw, 12rem)",
         dynamic:"clamp(0.4rem, 20vw, 12rem)"
       },
       backgroundImage: {

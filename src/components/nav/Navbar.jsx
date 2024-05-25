@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import AnimatedNavLink from "./AnimatedNavLink";
 import { motion, AnimatePresence } from "framer-motion";
 import MobileNavLink from "./MobileNavLink";
+import Magnetic from "../Magnetic";
 
 const navLinks = [
   { title: "Home", href: "#" },
@@ -64,10 +65,12 @@ const Navbar = () => {
       className="h-[10vh] grid items-center">
       <nav className="w-full flex px-3 lg:px-12 bg-transparent justify-between">
         {/* PORTFOLIO LOGO */}
-        <div className="flex gap-1 items-center">
-          <h1 className="uppercase font-bold flex items-center">naythar</h1>
-          <img src="/favicon.png" alt="logo" width={8} height={8} />
-        </div>
+        <Magnetic>
+          <div className="flex gap-1 items-center">
+            <h1 className="uppercase font-bold flex items-center">naythar</h1>
+            <img src="/favicon.png" alt="logo" width={8} height={8} />
+          </div>
+        </Magnetic>
 
         {/* Desktop Navbar */}
         <div className="hidden sm:flex space-x-8 md:space-x-12">

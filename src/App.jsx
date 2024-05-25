@@ -39,7 +39,7 @@ function App() {
     <CursorHoverProvider>
       <div className="font-dmsan">
         {splashscreenFinished ? (
-          <main className="w-full mx-auto">
+          <main className="w-full mx-auto overflow-x-hidden">
             <Navbar />
             <Hero />
             <AboutMe />

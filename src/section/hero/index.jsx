@@ -1,5 +1,5 @@
 import React from "react";
-import { motion, transform } from "framer-motion";
+import { motion } from "framer-motion";
 
 const staggerContainer = {
   initial: {},
@@ -32,6 +32,11 @@ const paragraphVariant = {
   },
 };
 
+const circleVariant = {
+  initial: { opacity: 0, scale: 0 },
+  animate: { opacity: 1, scale: 1, transition: { duration: 0.5, delay: 1 } },
+};
+
 const Hero = () => {
   const title = "Web Developer";
 
@@ -48,7 +53,11 @@ const Hero = () => {
               {char}
             </motion.span>
           ))}
-          <span className="absolute w-[6rem] h-[6rem] lg:w-[10rem] lg:h-[10rem] bg-skiny -z-10 rounded-full bottom-[-20px] right-[20px] lg:bottom-[2px] lg:right-[100px]"></span>
+          <motion.span
+            initial="initial"
+            animate="animate"
+            variants={circleVariant}
+            className="absolute w-[6rem] h-[6rem] lg:w-[10rem] lg:h-[10rem] bg-skiny -z-10 rounded-full bottom-[-20px] right-[20px] lg:bottom-[2px] lg:right-[100px]"></motion.span>
         </motion.h2>
         <motion.p
           initial="initial"
