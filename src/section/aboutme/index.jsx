@@ -14,7 +14,6 @@ const AboutMe = () => {
       start: "10% center",
       end: "80% center",
       scrub: true,
-      markers: true,
       onEnter: () => {
         document.body.style.backgroundColor = "#222";
         document.body.style.color = "#fff";
@@ -41,7 +40,7 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <div ref={aboutSectionRef} className="max-w-screen-2xl mx-auto lg:py-24">
+    <section id="about" ref={aboutSectionRef} className="max-w-screen-2xl mx-auto pt-8 lg:py-24">
       <div className="space-y-10 lg:space-y-20 pl-4 lg:px-20 text-lg lg:text-5xl tracking-wider leading-relaxed lg:leading-relaxed lg:tracking-wide">
         <p>
           Hey there! I'm Saw Nay Thar Poe, originally from Myanmar, While my
@@ -62,7 +61,7 @@ const AboutMe = () => {
           tasty snacks, and a good game.
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 

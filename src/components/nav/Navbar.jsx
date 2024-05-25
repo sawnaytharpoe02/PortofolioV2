@@ -4,10 +4,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import MobileNavLink from "./MobileNavLink";
 
 const navLinks = [
-  { title: "Home", href: "/" },
-  { title: "About", href: "/about" },
-  { title: "Projects", href: "/projects" },
-  { title: "Contact", href: "/contact" },
+  { title: "Home", href: "#" },
+  { title: "About", href: "#about" },
+  { title: "Expertise", href: "#expertise" },
+  { title: "Projects", href: "#featured-projects" },
+  { title: "Contact", href: "#contact" },
 ];
 
 const Navbar = () => {
@@ -69,10 +70,10 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navbar */}
-        <div className="hidden sm:flex space-x-8 md:space-x-16">
+        <div className="hidden sm:flex space-x-8 md:space-x-12">
           {navLinks?.map((link, i) => (
             <div key={i} className="relative overflow-hidden">
-              <AnimatedNavLink title={link.title} />
+              <AnimatedNavLink title={link.title} href={link.href} />
             </div>
           ))}
         </div>
@@ -88,10 +89,14 @@ const Navbar = () => {
               initial="initial"
               animate="animate"
               exit="exit"
-              className="fixed left-0 top-0 w-full h-screen origin-top bg-black text-white px-10 py-6 z-10">
+              className="fixed left-0 top-0 w-full h-screen origin-top bg-black text-white px-4 py-6 z-10">
               <div className="flex h-full flex-col">
                 <div className="flex justify-between">
-                  <h1>LOGO</h1>
+                  <div className="flex gap-1 items-center">
+                    <h1 className="uppercase font-bold flex items-center">
+                      naythar
+                    </h1>
+                  </div>
                   <div className="cursor-pointer" onClick={toggleMenu}>
                     Go Back
                   </div>
@@ -108,6 +113,7 @@ const Navbar = () => {
                         key={i}
                         title={link.title}
                         href={link.href}
+                        toggleMenu={toggleMenu}
                       />
                     </div>
                   ))}

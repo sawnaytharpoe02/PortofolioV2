@@ -4,7 +4,7 @@ import { languages, frameworks } from "../../utils/constant";
 
 const MyExpertise = () => {
   return (
-    <div className="max-w-screen-xl mx-auto flex flex-col lg:flex-row px-4 lg:px-0 py-12 lg:py-24 border border-red-600">
+    <section id="expertise" className="max-w-screen-xl mx-auto flex flex-col lg:flex-row px-4 lg:px-0 py-12 lg:py-24">
       <p className="basis-full lg:basis-5/12 text-4xl lg:text-5xl mb-4">My Expertise</p>
       <div className="basis-full lg:basis-7/12 space-y-4 font-medium tracking-wide text-grey">
         <p className="text-lg lg:leading-6 lg:px-2 font-normal tracking-wide mb-10">
@@ -48,7 +48,7 @@ const MyExpertise = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

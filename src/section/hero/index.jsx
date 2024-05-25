@@ -36,7 +36,7 @@ const Hero = () => {
   const title = "Web Developer";
 
   return (
-    <div className="w-full h-[90vh] lg:max-w-screen-xl lg:mx-auto  border border-red-400 flex items-center lg:items-end font-mango px-2 lg:px-20 py-10 pb-10">
+    <section className="w-full h-[90vh] lg:max-w-screen-xl lg:mx-auto flex items-center lg:items-end font-mango px-2 lg:px-20 py-10 pb-10">
       <div className="flex flex-col lg:flex-row items-end">
         <motion.h2
           initial="initial"
@@ -59,7 +59,7 @@ const Hero = () => {
           websites with exceptional user experiences.
         </motion.p>
       </div>
-    </div>
+    </section>
   );
 };
 

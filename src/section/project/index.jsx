@@ -10,7 +10,7 @@ const Project = () => {
   };
 
   return (
-    <main className="max-w-screen-lg mx-auto mt-10 lg:mt-0">
+    <section className="max-w-screen-lg mx-auto mt-10 lg:mt-0">
       <div className="mb-10 lg:mb-20 space-y-2 px-4 lg:px-0">
         <h3 className="text-4xl lg:text-5xl">All Projects</h3>
         <p className="text-md lg:text-lg tracking-wide">
@@ -49,17 +49,13 @@ const Project = () => {
               ))}
           </>
         )}
-        {projects.length > 8 ? (
-          <div
-            onClick={handleClick}
-            className="bg-neutral-800 hover:bg-neutral-700 text-white py-2 px-6 mb-20 flex items-center space-x-2 transition duration-150 ease-in rounded-full cursor-pointer mt-6">
-            <p>{!showMore ? "More Projects" : "Less Projects"}</p>
-          </div>
-        ) : (
-          <div className="mb-20"></div>
-        )}
+        <div
+          onClick={handleClick}
+          className="bg-neutral-800 hover:bg-neutral-700 text-white py-2 px-6 mb-20 flex items-center space-x-2 transition duration-150 ease-in rounded-full cursor-pointer mt-6">
+          <p>{!showMore ? "More Projects" : "Less Projects"}</p>
+        </div>
       </div>
-    </main>
+    </section>
   );
 };
 

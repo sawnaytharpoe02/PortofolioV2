@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const AnimatedNavLink = ({ title }) => {
+const AnimatedNavLink = ({ title, href }) => {
   const [isHovered, setHovered] = useState(false);
   return (
     <motion.div
@@ -16,6 +16,7 @@ const AnimatedNavLink = ({ title }) => {
       <div className="absolute top-0">
         <AnimateWord
           title={title}
+          href={href}
           animation={letterAnimationTwo}
           isHovered={isHovered}
         />
@@ -67,7 +68,7 @@ const letterAnimationTwo = {
   },
 };
 
-const AnimateWord = ({ title, animation, isHovered }) => {
+const AnimateWord = ({ title, href,animation, isHovered }) => {
   return (
     <motion.span
       variants={titlteAnimation}
@@ -78,12 +79,13 @@ const AnimateWord = ({ title, animation, isHovered }) => {
         letter === " " ? (
           <span key={i}>&nbsp;</span>
         ) : (
-          <motion.span
+          <motion.a
             key={i}
+            href={href}
             variants={animation}
             className="relative inline-block whitespace-nowrap">
             {letter}
-          </motion.span>
+          </motion.a>
         )
       )}
     </motion.span>
