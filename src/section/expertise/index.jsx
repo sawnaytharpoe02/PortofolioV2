@@ -4,16 +4,16 @@ import { languages, frameworks } from "../../utils/constant";
 
 const MyExpertise = () => {
   return (
-    <div className="max-w-screen-xl mx-auto flex py-24 border border-red-600">
-      <p className="basis-5/12 text-5xl mb-4">My Expertise</p>
-      <div className="basis-7/12 space-y-4 font-medium tracking-wide text-grey">
-        <p className="text-lg leading-6 px-2 font-normal tracking-wide mb-10">
+    <div className="max-w-screen-xl mx-auto flex flex-col lg:flex-row px-4 lg:px-0 py-12 lg:py-24 border border-red-600">
+      <p className="basis-full lg:basis-5/12 text-4xl lg:text-5xl mb-4">My Expertise</p>
+      <div className="basis-full lg:basis-7/12 space-y-4 font-medium tracking-wide text-grey">
+        <p className="text-lg lg:leading-6 lg:px-2 font-normal tracking-wide mb-10">
           I love bridging the gap between your vision and reality. I craft
           impactful digital experiences! Turning ideas into beautiful,
           user-friendly websites using a developer's toolkit. Always eager to
           learn more and explore new possibilities.
         </p>
-        <div className="flex gap-12 px-2">
+        <div className="flex flex-col lg:flex-row gap-12 lg:px-2">
           <div>
             <p className="uppercase text-black mb-4 font-lg">languages</p>
             <div>
@@ -33,7 +33,7 @@ const MyExpertise = () => {
               {frameworks.slice(0, 8).map((item, index) => (
                 <div
                   key={index}
-                  className="flex items-center mt-2 space-x-2 mr-12">
+                  className="flex items-center mt-2 space-x-2 lg:mr-12">
                   <GoTriangleRight />
                   <p>{item}</p>
                 </div>

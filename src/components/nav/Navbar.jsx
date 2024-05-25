@@ -52,8 +52,16 @@ const Navbar = () => {
   };
 
   return (
-    <div className="h-[10vh] grid items-center">
-      <nav className="w-full flex px-12 bg-transparent justify-between">
+    <motion.div
+      initial={{ opacity: 0, y: -180 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{
+        ease: "easeInOut",
+        duration: 1,
+        delay: 0.4,
+      }}
+      className="h-[10vh] grid items-center">
+      <nav className="w-full flex px-3 lg:px-12 bg-transparent justify-between">
         {/* PORTFOLIO LOGO */}
         <div className="flex gap-1 items-center">
           <h1 className="uppercase font-bold flex items-center">naythar</h1>
@@ -109,7 +117,7 @@ const Navbar = () => {
           )}
         </AnimatePresence>
       </nav>
-    </div>
+    </motion.div>
   );
 };
 

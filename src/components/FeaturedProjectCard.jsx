@@ -5,7 +5,6 @@ import { HoverContext } from "../utils/CursorHoverProvider";
 const FeaturedProjectCard = ({ project }) => {
   const { isHovered, setIsHovered } = useContext(HoverContext);
 
-  console.log(isHovered);
   return (
     <>
       <div>
@@ -18,7 +17,7 @@ const FeaturedProjectCard = ({ project }) => {
           <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
             <div className="flex flex-col items-center">
               <p
-                className="text-6xl tracking-wider uppercase"
+                className="lg:text-6xl tracking-wider uppercase"
                 style={{ color: project.titleColor }}>
                 {project.title}
               </p>

@@ -41,8 +41,8 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <div ref={aboutSectionRef} className="max-w-screen-2xl mx-auto py-24">
-      <div className="space-y-20 px-20 text-5xl leading-relaxed tracking-wide">
+    <div ref={aboutSectionRef} className="max-w-screen-2xl mx-auto lg:py-24">
+      <div className="space-y-10 lg:space-y-20 pl-4 lg:px-20 text-lg lg:text-5xl tracking-wider leading-relaxed lg:leading-relaxed lg:tracking-wide">
         <p>
           Hey there! I'm Saw Nay Thar Poe, originally from Myanmar, While my
           academic journey started with geography, the captivating world of web

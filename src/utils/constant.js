@@ -9,7 +9,7 @@ const languages = [
 const frameworks = [
   "React.js",
   "Next.js",
-  "Redux/Redux Toolkit",
+  "Redux Toolkit",
   "Node.js",
   "Express.js",
   "PostgreSQL",

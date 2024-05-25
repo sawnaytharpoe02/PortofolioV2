@@ -38,7 +38,7 @@ function App() {
   return (
     <CursorHoverProvider>
       <div className="font-dmsan">
-        {splashscreenFinished ? (
+        {/* {splashscreenFinished ? (
           <main className="w-full mx-auto">
             <Navbar />
             <Hero />
@@ -51,7 +51,18 @@ function App() {
           </main>
         ) : (
           <SplashScreen timeline={timeline} />
-        )}
+        )} */}
+
+        <main className="w-full mx-auto">
+          <Navbar />
+          <Hero />
+          <AboutMe />
+          <MyExpertise />
+          <FeatureProjects />
+          <Project />
+          <Contact />
+          <Footer />
+        </main>
         <Cursor />
       </div>
     </CursorHoverProvider>
