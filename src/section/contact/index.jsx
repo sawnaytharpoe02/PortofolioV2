@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import Magnetic from "../../components/Magnetic";
+import { Magnetic } from "../../components";
 import { motion, useInView, useAnimation } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { IoCloseCircle } from "react-icons/io5";

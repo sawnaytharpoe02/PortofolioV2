@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 import { projects } from "../../utils/constant";
-import ProjectCard from "../../components/ProjectCard";
-import Magnetic from "../../components/Magnetic";
+import { ProjectCard, Magnetic } from "../../components";
 import { animate, motion, useAnimation, useInView } from "framer-motion";
 
 const Project = () => {
