@@ -6,10 +6,10 @@ import MyExpertise from "./section/expertise";
 import Project from "./section/project";
 import Contact from "./section/contact";
 import FeatureProjects from "./section/feature_projects";
-import Footer from "./components/Footer";
-import Cursor from "./components/Cursor";
-import { CursorHoverProvider } from "./utils/CursorHoverProvider";
-import SplashScreen from './components/SplashScreen'
+import Footer from "./components/Footer.jsx";
+import Cursor from "./components/Cursor.jsx";
+import { CursorHoverProvider } from "./utils/CursorHoverProvider.jsx";
+import SplashScreen from "./components/SplashScreen.jsx";
 import gsap from "gsap";
 import "./App.css";
 
