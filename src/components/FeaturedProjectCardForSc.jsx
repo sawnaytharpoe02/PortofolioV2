@@ -8,7 +8,7 @@ const FeaturedProjectCardForSc = ({ project }) => {
       <div className="h-[12rem] rounded-sm" style={{ background: project.bgColor }}>
         <div className="h-full flex justify-center items-center">
           <p
-            className="text-4xl tracking-wider uppercase"
+            className="text-4xl tracking-wider uppercase text-center"
             style={{ color: project.titleColor }}>
             {project.title}
           </p>

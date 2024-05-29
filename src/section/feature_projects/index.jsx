@@ -36,7 +36,7 @@ const FeatureProjects = () => {
             featuredProjects={[featuredProjects[0], featuredProjects[1]]}
           />
           <Double
-            featuredProjects={[featuredProjects[0], featuredProjects[1]]}
+            featuredProjects={[featuredProjects[2], featuredProjects[3]]}
             reversed={true}
           />
         </div>

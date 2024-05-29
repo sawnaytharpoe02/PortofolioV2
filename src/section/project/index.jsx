@@ -56,14 +56,14 @@ const Project = () => {
         </div>
         <div className="w-full">
           {projects
-            .filter((v) => v.id <= 8)
+            .filter((v, index) => index <= 8)
             .map((project, index) => (
               <ProjectCard index={index} project={project} key={index} />
             ))}
           {showMore && (
             <>
               {projects
-                .filter((v) => v.id > 8)
+                .filter((v, index) => index > 8)
                 .map((project, index) => (
                   <ProjectCard index={index} project={project} key={index} />
                 ))}

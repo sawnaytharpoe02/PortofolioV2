@@ -11,18 +11,20 @@ const FeaturedProjectCard = ({ project }) => {
         <div
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
-          onClick={() => console.log(project.href)}
+          onClick={() => window.open(project.href, "_blank")}
           className="pb-[66%] relative cursor-none"
           style={{ background: project.bgColor }}>
           <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
             <div className="flex flex-col items-center">
               <p
-                className="lg:text-6xl tracking-wider uppercase"
+                className="lg:text-6xl tracking-wider uppercase text-center"
                 style={{ color: project.titleColor }}>
                 {project.title}
               </p>
               <div className="text-center mt-2">
-                <p className="text-grey">{project.description}</p>
+                <p style={{ color: project.titleColor }}>
+                  {project.description}
+                </p>
               </div>
             </div>
           </div>
