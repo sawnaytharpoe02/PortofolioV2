@@ -1,3 +1,3 @@
 {
-  "plugins": ["glsl", "babel-plugin-macros","glslify"]
+  "presets": ["@babel/preset-env", "@babel/preset-react"]
 }
