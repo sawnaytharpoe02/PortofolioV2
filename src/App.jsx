@@ -9,7 +9,7 @@ import FeatureProjects from "./section/feature_projects";
 import Footer from "./components/footer";
 import Cursor from "./components/cursor";
 import { CursorHoverProvider } from "./utils/CursorHoverProvider";
-import SplashScreen from "./components/SplashScreen";
+import SplashScreen from "./components/splashScreen";
 import gsap from "gsap";
 import "./App.css";
 
