@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { featuredProjects } from "../../utils/constant";
-import { Double, FeaturedProjectCardForSc } from "../../components";
+import Double from "../../components/Double";
+import FeaturedProjectCardForSc from "../../components/FeaturedProjectCardForSc";
 import { motion, useAnimation, useInView } from "framer-motion";
 
 const FeatureProjects = () => {

@@ -1,7 +1,8 @@
 import React, { useState, useRef } from "react";
 import { projects } from "../../utils/constant";
-import { ProjectCard, Magnetic } from "../../components";
-import { animate, motion, useAnimation, useInView } from "framer-motion";
+import ProjectCard from "../../components/ProjectCard";
+import Magnetic from "../../components/Magnetic";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 const Project = () => {
   const [showMore, setShowMore] = useState(false);
