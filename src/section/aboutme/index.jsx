@@ -18,7 +18,7 @@ const AboutMe = () => {
     const trigger = {
       trigger: el,
       start: "10% center",
-      end: "80% center",
+      end: "90% center",
       scrub: true,
       onEnter: () => changeBodyStyle("#222", "#fff"),
       onLeave: () => changeBodyStyle("initial", "#222"),
@@ -34,24 +34,33 @@ const AboutMe = () => {
       id="about"
       ref={aboutSectionRef}
       className="max-w-screen-2xl mx-auto pt-8 lg:py-24">
-      <div className="space-y-10 lg:space-y-20 pl-4 lg:px-20 text-lg lg:text-5xl tracking-wider leading-relaxed lg:leading-relaxed lg:tracking-wide">
+      <div className="space-y-10 lg:space-y-20 pl-4 pr-2 lg:px-20 leading-[1.75] text-pretty text-lg lg:leading-relaxed lg:text-5xl lg:tracking-wider">
         <p>
-          Hey there! I'm Saw Nay Thar Poe, originally from Myanmar, While my
-          academic journey started with geography, the captivating world of web
-          technology grabbed my attention. Now, I'm diving headfirst into this
-          dynamic field, fueled by a passion for crafting user-friendly web
+          Hey there! I'm Saw Nay Thar Poe, originally from Myanmar. While my
+          academic journey began in geography, the captivating world of web
+          technology soon grabbed my attention. Now, I'm diving headfirst into
+          this dynamic field, fueled by a passion for crafting user-friendly web
           applications.
         </p>
         <p>
-          I started playing around with a task management system and restaurant
-          ordering system. Seeing how technology can make things easier for
-          people really interested me. Now, my goal is to simplify people's
-          daily lives with user-friendly web apps crafted with my passion and
-          expertise.
+          My journey into web development started with creating a task
+          management system and a restaurant ordering system. Witnessing
+          firsthand how technology can simplify everyday tasks sparked my
+          enthusiasm and determination. I love the challenge of turning complex
+          problems into elegant, intuitive solutions that enhance people's
+          lives.
         </p>
         <p>
-          Away from the keyboard, you'll find me enjoying historical dramas,
-          tasty snacks, and a good game.
+          I have experience in building responsive, efficient, and aesthetically
+          pleasing web applications using the latest technologies. My expertise
+          includes React, Next.js and various other tools that help bring
+          innovative ideas to life.
+        </p>
+        <p>
+          I'm constantly learning and evolving in this ever-changing field,
+          eager to embrace new challenges and opportunities. My ultimate goal is
+          to continue creating impactful, user-centric web applications that
+          make a difference in people's lives
         </p>
       </div>
     </section>

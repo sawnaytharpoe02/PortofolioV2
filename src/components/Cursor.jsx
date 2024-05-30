@@ -24,7 +24,9 @@ const Cursor = () => {
   const delayedMouse = useRef({ x: 0, y: 0 });
 
   const moveCircle = (x, y) => {
-    gsap.set(circle.current, { x, y, xPercent: -50, yPercent: -50 });
+    if (circle.current) {
+      gsap.set(circle.current, { x, y, xPercent: -50, yPercent: -50 });
+    }
   };
 
   const animate = () => {

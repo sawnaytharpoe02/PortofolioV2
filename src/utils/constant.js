@@ -28,8 +28,8 @@ const projects = [
   {
     title: "Portfolio V2",
     development: ["Frontend"],
-    href: "https://sawnaytharpoe.vercel.app",
-    stacks: ["React", "Tailwindcss", "Vite", 'Framer-motion', 'gsap'],
+    github: "https://github.com/sawnaytharpoe02/PortofolioV2",
+    stacks: ["React", "Tailwindcss", "Vite", "Framer-motion", "Gsap"],
     year: "2024",
   },
   {

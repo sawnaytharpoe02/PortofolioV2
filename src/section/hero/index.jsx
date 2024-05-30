@@ -42,12 +42,12 @@ const Hero = () => {
 
   return (
     <section className="w-full h-[90vh] lg:max-w-screen-xl lg:mx-auto flex items-center lg:items-end font-mango px-2 lg:px-20 py-10 pb-10">
-      <div className="flex flex-col lg:flex-row items-end">
+      <div className="flex flex-col lg:flex-row items-end font-thin">
         <motion.h2
           initial="initial"
           animate="animate"
           variants={staggerContainer}
-          className="relative text-dynamic leading-none tracking-tight font-thin font-anderson">
+          className="relative text-hero leading-none tracking-tight font-anderson">
           {title.split("").map((char, index) => (
             <motion.span key={index} variants={letterVariant}>
               {char}
@@ -63,7 +63,7 @@ const Hero = () => {
           initial="initial"
           animate="animate"
           variants={paragraphVariant}
-          className="w-[14rem] lg:w-[24rem] text-sm tracking-wide font-thin font-anderson mt-14 lg:mb-10 lg:-ml-32">
+          className="w-[14rem] lg:w-[24rem] text-sm tracking-wide font-anderson mt-14 lg:mb-10 lg:-ml-32">
           Junior Web Developer passionate about crafting elegant, engaging
           websites with exceptional user experiences.
         </motion.p>

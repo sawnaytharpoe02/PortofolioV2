@@ -16,7 +16,8 @@ export default {
         skiny: "#ebdcc9",
       },
       fontSize: {
-        dynamic:"clamp(0.4rem, 20vw, 12rem)"
+        hero:"clamp(0.4rem, 20vw, 12rem)",
+        para: "clamp()"
       },
       backgroundImage: {
         "custom-gradient":
