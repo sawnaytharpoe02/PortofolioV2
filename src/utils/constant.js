@@ -26,6 +26,13 @@ const frameworks = [
 
 const projects = [
   {
+    title: "Portfolio V2",
+    development: ["Frontend"],
+    href: "https://sawnaytharpoe.vercel.app",
+    stacks: ["React", "Tailwindcss", "Vite", 'Framer-motion', 'gsap'],
+    year: "2024",
+  },
+  {
     title: "Duralumin Blog",
     development: ["Frontend"],
     href: "https://duralumin-blog.vercel.app",
