@@ -72,7 +72,7 @@ const MyExpertise = () => {
             </div>
           </div>
           <div>
-            <p className="uppercase text-black mb-4 font-lg"></p>
+            <p className="uppercase text-black mb-4 font-lg">frameworks / others</p>
             <div className="grid grid-cols-2">
               {frameworks.slice(0, 8).map((item, index) => (
                 <div
