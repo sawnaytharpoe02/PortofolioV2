@@ -23,6 +23,7 @@ const Footer = () => {
         <div className="flex gap-2 items-center">
           <Magnetic>
             <a
+              target="_blank"
               className="hidden lg:block"
               href="https://www.linkedin.com/in/saw-nay-thar-poe-5a827b256/">
               <LinkedinIcon />
@@ -30,13 +31,14 @@ const Footer = () => {
           </Magnetic>
 
           <Magnetic>
-            <a href="https://github.com/sawnaytharpoe02/">
+            <a target="_blank" href="https://github.com/sawnaytharpoe02/">
               <GithubIcon />
             </a>
           </Magnetic>
 
           <Magnetic>
             <a
+              target="_blank"
               className="hidden lg:block"
               href="https://codepen.io/duralumin02">
               <CodepenIcon />
@@ -44,7 +46,7 @@ const Footer = () => {
           </Magnetic>
 
           <Magnetic>
-            <a href="mailto:sawnaytharhpoe02@gmail.com">
+            <a target="_blank" href="mailto:sawnaytharhpoe02@gmail.com">
               <EmailIcon />
             </a>
           </Magnetic>

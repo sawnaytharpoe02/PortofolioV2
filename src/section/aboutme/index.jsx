@@ -12,7 +12,7 @@ const AboutMe = () => {
     const changeBodyStyle = (bgColor, color) => {
       document.body.style.backgroundColor = bgColor;
       document.body.style.color = color;
-      document.body.style.transition = "all 0.8s";
+      document.body.style.transition = "all 0.6s";
     };
 
     const trigger = {
