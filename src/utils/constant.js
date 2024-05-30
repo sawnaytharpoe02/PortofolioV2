@@ -165,7 +165,7 @@ const featuredProjects = [
   },
   {
     title: "MyBento MyFolio",
-    href: "https://my-bentomy-folio.vercel.app/",
+    href: "https://my-bento-my-folio.vercel.app/",
     repo: "https://github.com/sawnaytharpoe02/myBentomyFolio",
     description:
       "Mybento myFolio is a vibrant showcase of my passion for trendy bento designs. It's not just a portfolio; it's a dynamic gallery capturing my current creative journey, celebrating the art of bento with a fresh, modern twist.",
