@@ -4,8 +4,8 @@ import {
   GithubIcon,
   CodepenIcon,
   EmailIcon,
-} from "../utils/general-icons";
-import Magnetic from "./Magnetic";
+} from "../../utils/general-icons";
+import Magnetic from "../Magnetic";
 
 const Footer = () => {
   return (
