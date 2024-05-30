@@ -32,6 +32,15 @@ const FeaturedProjectCardForSc = ({ project }) => {
             ))}
           </div>
         </div>
+        {project.demoCredentials && (
+            <div className="space-y-1">
+              <h5 className="text-xl uppercase">Demo Credentials</h5>
+              <div className="flex flex-wrap gap-2">
+                <p>Email [{project.demoCredentials.email}]</p>
+                <p>Password [{project.demoCredentials.password}]</p>
+              </div>
+            </div>
+          )}
         <div className="flex items-center gap-4">
           <div className="flex items-center space-x-2">
             <FaGithub className="text-2xl" />

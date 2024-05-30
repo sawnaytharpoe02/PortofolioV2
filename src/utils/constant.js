@@ -142,6 +142,10 @@ const featuredProjects = [
       "Cloudinary",
       "Socket.io",
     ],
+    demoCredentials: {
+      email: "sawnaytharpoe14@gmail.com",
+      password: "admin123",
+    },
     bgColor: "#274546",
     titleColor: "#efeee5",
   },
@@ -186,6 +190,10 @@ const featuredProjects = [
     description:
       "This project offers blog articles on various topics. Users can create accounts, subscribe to favorite authors, and engage in discussions through comments. An admin dashboard allows easy management of posts.",
     tech: ["Laravel", "Tailwindcss", "AOS", "Digital Ocean"],
+    demoCredentials: {
+      email: "nathaniel@gmail.com",
+      password: "user123456",
+    },
     bgColor: "#fbf8f3",
     titleColor: "#232323",
   },
