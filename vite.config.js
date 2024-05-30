@@ -7,14 +7,16 @@ export default defineConfig({
   base: "/PortofolioV2/",
   resolve: {
     alias: {
-      "@": "/src",
+      "@": path.resolve(__dirname, "src"),
     },
   },
   build: {
     rollupOptions: {
       onwarn(warning, warn) {
-        // Suppress warnings that can be safely ignored
-        if (warning.code !== "UNRESOLVED_IMPORT") warn(warning);
+        if (warning.code === "UNRESOLVED_IMPORT") {
+          console.error(`Could not resolve import: ${warning.source}`);
+        }
+        warn(warning);
       },
     },
   },
