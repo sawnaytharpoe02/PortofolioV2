@@ -7,7 +7,7 @@ import Project from "./section/project";
 import Contact from "./section/contact";
 import FeatureProjects from "./section/feature_projects";
 import SplashScreen from "./components/SplashScreen";
-import Footer from "./components/Footer";
+import Footer from "./components/footer";
 import Cursor from "./components/Cursor";
 import { CursorHoverProvider } from "./utils/CursorHoverProvider.jsx";
 import gsap from "gsap";
