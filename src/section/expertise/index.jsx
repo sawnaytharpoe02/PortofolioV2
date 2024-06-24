@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { GoTriangleRight } from "react-icons/go";
 import { languages, frameworks } from "../../utils/constant";
-import { useInView, useAnimation, motion, stagger } from "framer-motion";
+import { useInView, useAnimation, motion } from "framer-motion";
 
 const MyExpertise = () => {
   const ref = useRef(null);

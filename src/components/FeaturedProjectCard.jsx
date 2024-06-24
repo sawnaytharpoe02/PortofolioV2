@@ -47,8 +47,8 @@ const FeaturedProjectCard = ({ project }) => {
             <div className="space-y-1">
               <h5 className="text-xl uppercase">Demo Credentials</h5>
               <div className="flex gap-2">
-                <p>Email [{project.demoCredentials.email}]</p>
-                <p>Password [{project.demoCredentials.password}]</p>
+                <p>Email ({project.demoCredentials.email})</p>
+                <p>Password ({project.demoCredentials.password})</p>
               </div>
             </div>
           )}

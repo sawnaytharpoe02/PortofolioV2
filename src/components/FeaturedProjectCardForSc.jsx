@@ -1,11 +1,34 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { FaGithub } from "react-icons/fa6";
 import { TbView360 } from "react-icons/tb";
+import { useInView, useAnimation, motion } from "framer-motion";
 
 const FeaturedProjectCardForSc = ({ project }) => {
+  const ref = useRef(null);
+  const inViewControls = useAnimation();
+  const inView = useInView(ref, { once: true });
+
+  useEffect(() => {
+    if (inView) {
+      inViewControls.start("animate");
+    }
+  }, [inView, inViewControls]);
+
+  const projectCardForScVariants = {
+    initial: { opacity: 0, y: 60 },
+    animate: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  };
+
   return (
-    <div className="mt-10">
-      <div className="h-[12rem] rounded-sm" style={{ background: project.bgColor }}>
+    <motion.div
+      ref={ref}
+      initial="initial"
+      animate={inViewControls}
+      variants={projectCardForScVariants}
+      className="mt-12">
+      <div
+        className="h-[12rem] rounded-sm"
+        style={{ background: project.bgColor }}>
         <div className="h-full flex justify-center items-center">
           <p
             className="text-4xl tracking-wider uppercase text-center"
@@ -33,14 +56,14 @@ const FeaturedProjectCardForSc = ({ project }) => {
           </div>
         </div>
         {project.demoCredentials && (
-            <div className="space-y-1">
-              <h5 className="text-xl uppercase">Demo Credentials</h5>
-              <div className="flex flex-wrap gap-2">
-                <p>Email [{project.demoCredentials.email}]</p>
-                <p>Password [{project.demoCredentials.password}]</p>
-              </div>
+          <div className="space-y-1">
+            <h5 className="text-xl uppercase">Demo Credentials</h5>
+            <div className="flex flex-wrap">
+              <p>Email ({project.demoCredentials.email})</p>
+              <p>Password ({project.demoCredentials.password})</p>
             </div>
-          )}
+          </div>
+        )}
         <div className="flex items-center gap-4">
           <div className="flex items-center space-x-2">
             <FaGithub className="text-2xl" />
@@ -52,7 +75,7 @@ const FeaturedProjectCardForSc = ({ project }) => {
             </a>
           </div>
           <div className="flex items-center space-x-2">
-            <TbView360 className="text-2xl"/>
+            <TbView360 className="text-2xl" />
             <a
               href={project.href}
               className="cursor-pointer hover:text-grey"
@@ -62,7 +85,7 @@ const FeaturedProjectCardForSc = ({ project }) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

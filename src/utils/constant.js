@@ -33,6 +33,13 @@ const projects = [
     year: "2024",
   },
   {
+    title: "Blog",
+    development: ["Fullstack"],
+    github: "https://github.com/sawnaytharpoe02/laravel-duraBlog",
+    stacks: ["Laravel", "Tailwindcss", "AOS", "Digital Ocean"],
+    year: "2023",
+  },
+  {
     title: "Duralumin Blog",
     development: ["Frontend"],
     href: "https://duralumin-blog.vercel.app",
@@ -191,16 +198,12 @@ const featuredProjects = [
     titleColor: "#fbf8f3",
   },
   {
-    title: "Blog",
-    href: "http://143.198.215.234/",
-    repo: "https://github.com/sawnaytharpoe02/laravel-duraBlog",
+    title: "BankInc",
+    href: "https://bank-inc.vercel.app/",
+    repo: "https://github.com/sawnaytharpoe02/banking-mng-sym",
     description:
-      "This project offers blog articles on various topics. Users can create accounts, subscribe to favorite authors, and engage in discussions through comments. An admin dashboard allows easy management of posts.",
-    tech: ["Laravel", "Tailwindcss", "AOS", "Digital Ocean"],
-    demoCredentials: {
-      email: "nathaniel@gmail.com",
-      password: "user123456",
-    },
+      "This project is a mini banking management system built to practice and apply the foundational and latest features of Next.js. It efficiently handles customer accounts, transactions, and basic banking activities.",
+    tech: ["NextJS", "Typescript", "Postgresql", "ChadcnUI"],
     bgColor: "#fbf8f3",
     titleColor: "#232323",
   },
