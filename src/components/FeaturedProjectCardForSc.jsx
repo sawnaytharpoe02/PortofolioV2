@@ -58,8 +58,12 @@ const FeaturedProjectCardForSc = ({ project }) => {
         {project.demoCredentials && (
           <div className="space-y-1">
             <h5 className="text-lg uppercase">Demo Credentials</h5>
-            <div className="flex flex-wrap text-[15px]">
-              <p>Email ({project.demoCredentials.email})</p>
+            <div className="flex flex-wrap gap-2 text-[15px]">
+              {project.demoCredentials.email ? (
+                <p>Email ({project.demoCredentials.email})</p>
+              ) : (
+                <p>Username ({project.demoCredentials.username})</p>
+              )}
               <p>Password ({project.demoCredentials.password})</p>
             </div>
           </div>

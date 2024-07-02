@@ -204,6 +204,10 @@ const featuredProjects = [
     description:
       "This project is a mini banking management system built to practice and apply the foundational and latest features of Next.js. It efficiently handles customer accounts, transactions, and basic banking activities.",
     tech: ["NextJS", "Typescript", "Postgresql", "ChadcnUI"],
+    demoCredentials: {
+      username: "admin",
+      password: "admin123",
+    },
     bgColor: "#fbf8f3",
     titleColor: "#232323",
   },
