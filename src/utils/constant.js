@@ -26,6 +26,13 @@ const frameworks = [
 
 const projects = [
   {
+    title: "MyBento MyFolio",
+    development: ["Frontend"],
+    href: "https://my-bento-my-folio.vercel.app",
+    stacks: ["Next.js", "Typescript", "Framer Motion", "Tailwindcss"],
+    year: "2024",
+  },
+  {
     title: "Portfolio V2",
     development: ["Frontend"],
     github: "https://github.com/sawnaytharpoe02/PortofolioV2",
@@ -164,6 +171,20 @@ const featuredProjects = [
     titleColor: "#efeee5",
   },
   {
+    title: "BankInc",
+    href: "https://bank-inc.vercel.app/",
+    repo: "https://github.com/sawnaytharpoe02/banking-mng-sym",
+    description:
+      "This project is a mini banking management system built to practice and apply the foundational and latest features of Next.js. It efficiently handles customer accounts, transactions, and basic banking activities.",
+    tech: ["NextJS", "Typescript", "Postgresql", "ChadcnUI"],
+    demoCredentials: {
+      username: "admin",
+      password: "admin123",
+    },
+    bgColor: "#fbf8f3",
+    titleColor: "#232323",
+  },
+  {
     title: "Forklore",
     href: "https://food-ordering-sym.vercel.app",
     repo: "https://github.com/sawnaytharpoe02/rest-pos",
@@ -196,20 +217,6 @@ const featuredProjects = [
     ],
     bgColor: "#232323",
     titleColor: "#fbf8f3",
-  },
-  {
-    title: "BankInc",
-    href: "https://bank-inc.vercel.app/",
-    repo: "https://github.com/sawnaytharpoe02/banking-mng-sym",
-    description:
-      "This project is a mini banking management system built to practice and apply the foundational and latest features of Next.js. It efficiently handles customer accounts, transactions, and basic banking activities.",
-    tech: ["NextJS", "Typescript", "Postgresql", "ChadcnUI"],
-    demoCredentials: {
-      username: "admin",
-      password: "admin123",
-    },
-    bgColor: "#fbf8f3",
-    titleColor: "#232323",
   },
 ];
 

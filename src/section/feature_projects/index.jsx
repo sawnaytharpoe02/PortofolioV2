@@ -34,12 +34,12 @@ const FeatureProjects = () => {
         {/* laptop device */}
         <div className="hidden lg:block">
           <Double
-            featuredProjects={[featuredProjects[2], featuredProjects[3]]}
-            reversed={true}
-          />
-          <Double
             featuredProjects={[featuredProjects[0], featuredProjects[1]]}
           />
+          {/* <Double
+            featuredProjects={[featuredProjects[2], featuredProjects[3]]}
+            reversed={true}
+          /> */}
         </div>
 
         {/* mobile device */}
