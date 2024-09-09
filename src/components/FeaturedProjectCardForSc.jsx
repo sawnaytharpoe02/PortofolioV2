@@ -40,11 +40,11 @@ const FeaturedProjectCardForSc = ({ project }) => {
 
       <div className="space-y-3 mt-4">
         <div>
-          <h4 className="text-lg uppercase">Project Concept</h4>
+          <h4 className="text-lg font-medium uppercase">Project Concept</h4>
           <p className="text-grey mt-1">{project.description}</p>
         </div>
         <div className="space-y-2">
-          <h5 className="text-lg uppercase">Tech Behind Implemented</h5>
+          <h5 className="text-lg font-medium uppercase">Tech Behind Implemented</h5>
           <div className="flex flex-wrap gap-2">
             {project.tech.map((tech, index) => (
               <div
@@ -57,7 +57,7 @@ const FeaturedProjectCardForSc = ({ project }) => {
         </div>
         {project.demoCredentials && (
           <div className="space-y-1">
-            <h5 className="text-lg uppercase">Demo Credentials</h5>
+            <h5 className="text-lg font-medium uppercase">Demo Credentials</h5>
             <div className="flex flex-wrap gap-2 text-[15px]">
               {project.demoCredentials.email ? (
                 <p>Email ({project.demoCredentials.email})</p>

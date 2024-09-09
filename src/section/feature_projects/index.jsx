@@ -44,7 +44,7 @@ const FeatureProjects = () => {
 
         {/* mobile device */}
         <div className="block lg:hidden">
-          {featuredProjects.map((project, index) => (
+          {featuredProjects.filter((project, i) => i < 2).map((project, index) => (
             <div key={index} className="px-4">
               <FeaturedProjectCardForSc project={project} />
             </div>
